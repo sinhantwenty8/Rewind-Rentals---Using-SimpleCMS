@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 25 Nov 2022 18:04:26 +0800</pubDate><title><![CDATA[Data Collection]]></title><url><![CDATA[data-collection]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Data Collection]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[index]]></parent><content><![CDATA[<title></title>
+<link href="../theme/Mytheme/css/smallDevicesStyle.css" media="screen and (max-width: 1000px)" rel="stylesheet" />
+<link href="../theme/Mytheme/css/addProductStyle.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&amp;display=swap" rel="stylesheet" type="text/css" />
+<div class="form-container">
+	<div id="form">
+		<h2>Add Product</h2>
+
+		<h3>Your Information</h3>
+
+		<form action="submit.php" class="form-class" id="form-id" method="post" onsubmit="return validation(this)">
+		<div class="grid">
+			<div class="form-group"><label class="label" for="name">Name<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="name" name="name" required="" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="email">Email address<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="email" name="email" required="" type="email" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="quantity">Quantity of <strong>products</strong> have previously submitted<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="quantity" name="quantity" required="" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="rented">Rented a product In the past <strong>5</strong> years?<span class="asterisk">*</span></label>
+
+				<div><input id="yes" name="rented" type="radio" value="yes" /> <label for="yes">Yes</label><br />
+					<input checked="checked" id="no" name="rented" required="" type="radio" value="no" /> <label for="no">No</label></div>
+			</div>
+		</div>
+
+		<hr />
+		<h3>Product Information</h3>
+
+		<div class="grid">
+			<div class="form-group"><label class="label" for="name">Product Name<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="product-name" name="product-name" required="" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="categories">Category<span class="asterisk">*</span></label>
+
+				<div class="input-group"><select id="categories" name="categories" onchange="showCategoryTextInput()"><option value="movie">Movie</option><option value="tvshow">Tvshow</option><option value="create-category">Create Category</option> </select></div>
+				<input class="form-control" id="category" name="category" style="display: none;" type="text" /></div>
+
+			<div class="form-group"><label class="label" for="product-image">Product Image<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="product-image" name="product-image" required="" type="file" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="product-url">Product URL<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="product-url" name="product-url" required="" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="product-condition">Product Condition</label>
+
+				<div class="input-group"><input class="form-control" id="product-condition" name="product-condition" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="search-tag">Search Tag</label>
+
+				<div class="input-group"><input class="form-control" id="search-tag" name="search-tag" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="parental-rating">Parental Rating</label>
+
+				<div class="input-group"><input class="form-control" id="parental-rating" name="parental-rating" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="episode">Number of Episodes</label>
+
+				<div class="input-group"><input class="form-control" id="episode" name="episode" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="release-year">Release Year<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="release-year" name="release-year" required="" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="duration">Duration<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="duration" name="duration" required="" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="time-unit">Time Unit<span class="asterisk">*</span></label>
+
+				<div><input id="minutes" name="time-unit" type="radio" value="minutes" /> <label for="minutes">Minutes</label><br />
+					<input checked="checked" id="hours" name="time-unit" required="" type="radio" value="hours" /> <label for="hours">Hours</label></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="production-country">Production Country<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="production-country" name="production-country" required="" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="mode-of-delivery">Mode of delivery<span class="asterisk">*</span></label>
+
+				<div><input id="physical" name="mode-of-delivery" type="radio" value="physical" /> <label for="physical">Physical</label><br />
+					<input checked="checked" id="digital" name="mode-of-delivery" required="" type="radio" value="digital" /> <label for="digital">Digital</label></div>
+			</div>
+
+			<div class="form-group" style="margin-bottom: 40px;"><label class="label" for="message">Description<span class="asterisk">*</span></label>
+
+				<div class="input-group"><textarea class="form-control" id="description" maxlength="3000" name="description" required="" rows="6"></textarea></div>
+			</div>
+		</div>
+
+		<hr />
+		<h3>Rental Details</h3>
+
+		<div class="grid">
+			<div class="form-group"><label class="label" for="rental-cost">Rental Costs<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="rental-cost" name="rental-cost" oninput="displayCommission()" required="" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="currency">Currency<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="currency" name="currency" required="" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="commission">Commission<span class="asterisk">*</span></label>
+
+				<div class="input-group readonly"><input class="form-control" id="commission" name="commission" readonly="readonly" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="earnings">Your earnings from the rental<span class="asterisk">*</span></label>
+
+				<div class="input-group readonly"><input class="form-control" id="earnings" name="earnings" readonly="readonly" type="number" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="rental-period">Rental Period<span class="asterisk">*</span></label>
+
+				<div class="input-group"><input class="form-control" id="rental-period" name="rental-period" required="" type="number" /></div>
+			</div>
+		</div>
+
+		<hr />
+		<h3>Product Review</h3>
+
+		<div class="flex-form">
+			<div class="form-group"><label class="label" for="review-title">Review Title</label>
+
+				<div class="input-group"><input class="form-control" id="review-title" name="review-title" type="text" /></div>
+			</div>
+
+			<div class="form-group"><label class="label" for="review-description">Review Description</label>
+
+				<div class="input-group"><textarea class="form-control review-description" id="review-description" maxlength="3000" name="review-description" rows="6"></textarea></div>
+			</div>
+		</div>
+
+		<hr />
+		<h3>Extra Product Information</h3>
+
+		<div class="flex-form" id="extra-products-form">
+			<div id="extra-products">
+				<h3>Extra Product 1</h3>
+
+				<div class="extra-product">
+					<div class="form-group"><label class="label" for="extra-product">Extra Product Name<span class="asterisk">*</span></label>
+
+						<div class="input-group"><input class="form-control" id="extra-product" name="extra-product" required="" type="text" /></div>
+					</div>
+
+					<div class="form-group"><label class="label" for="extra-product-cost">Extra Product Costs<span class="asterisk">*</span></label>
+
+						<div class="input-group"><input class="form-control" id="extra-product-cost" name="extra-product-cost" required="" type="number" /></div>
+					</div>
+
+					<div class="form-group"><label class="label" for="extra-product-image">Extra Product Image<span class="asterisk">*</span></label>
+
+						<div class="input-group"><input class="form-control" id="extra-product-image" name="extra-product-image" required="" type="file" /></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-group"><button class="btn" id="add-extra-button" onclick="addExtra()" type="button">Add Extra Product</button><button class="btn display-none" id="delete-extra-button" onclick="deleteExtra()" type="button">Delete Extra Product</button></div>
+
+			<div class="form-group"><span> <input id="terms-and-cons" name="terms-and-cons" required="" type="checkbox" /> </span> <label class="label" for="terms-and-cons">By checking this, you accept the Terms and Conditions<span class="asterisk">*</span></label></div>
+		</div>
+
+		<hr />
+		<div class="btn-group" style="margin-top: 5vw;"><button class="btn" type="reset">Clear Form</button><button class="btn" type="submit">Submit</button></div>
+		</form>
+	</div>
+</div>
+]]></content><private><![CDATA[]]></private><author><![CDATA[sinhantwenty]]></author></item>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   File Name : movies.xml
+   Author Name : Chau Sin Han
+   File Created on : 24 October 2022 
+-->
+
+<!DOCTYPE products [
+    <!ELEMENT products (product+)>
+
+    <!ELEMENT product (name,description,rentalCost,searchTag*,parentalRating?,productCondition?,extraProduct+,review*,productImg+,productURL,releaseYear,episode?,duration,productionCountry,rentalPeriod)>
+    <!ATTLIST product productID ID #REQUIRED>
+    <!ENTITY new "The product is new, sealed in it's factory packaging.">
+    <!ENTITY poor "The product is useable. However, the item may be more dented, scratched, rusted or dirty than our normal 'Used' condition level.">
+
+    <!ELEMENT name (#PCDATA)>
+    <!ATTLIST name modeOfDelivery (physical|digital) #REQUIRED>
+
+    <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT rentalCost (#PCDATA)>
+    <!ATTLIST rentalCost currency CDATA #REQUIRED>
+
+    <!ELEMENT searchTag (#PCDATA)>
+    <!ELEMENT parentalRating (#PCDATA)>
+    <!ELEMENT productCondition (#PCDATA)>
+
+    <!ELEMENT extraProduct (extraProductName,additionalCost,extraProductImg?)>
+    <!ELEMENT extraProductName (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ATTLIST additionalCost currency CDATA #REQUIRED>
+    <!ELEMENT extraProductImg (#PCDATA)>
+
+    <!ELEMENT review (title,reviewDescription)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT reviewDescription (#PCDATA)>
+
+    <!ELEMENT productImg (#PCDATA)>
+    <!ELEMENT productURL (#PCDATA)>
+    <!ELEMENT releaseYear (#PCDATA)>
+    <!ELEMENT episode (#PCDATA)>
+
+    <!ELEMENT duration (#PCDATA)>
+    <!ATTLIST duration timeUnit (minutes|hours) #REQUIRED>
+
+    <!ELEMENT productionCountry (#PCDATA)>
+    <!ELEMENT rentalPeriod (#PCDATA)>
+]>
+
+<products>
+    <product productID="m1">
+
+        <name modeOfDelivery="physical">My Love</name>
+        <description>
+            Tells the 15-year love story between Zhou Xiao Qi, a long-time swimming student and You Yong Ci, a transfer student. In high school, Zhou Xiao Qi fell in love at first sight with You Yong Ci. 
+            A young and ignorant pure love, the boy silently guarded, but the girl left without saying goodbye. Life after that, 15 years of love long-distance race. Your wedding is also my coming-of-age gift.
+        </description>
+        <rentalCost currency="SGD">5</rentalCost>
+        <searchTag>Love At First Sight</searchTag>
+        <searchTag>Swimming</searchTag>
+        <parentalRating>PG13</parentalRating>
+        <productCondition>&poor;</productCondition>
+    
+        <extraProduct>
+            <extraProductName>Photobook for My Love</extraProductName>
+            <additionalCost currency="SGD">10</additionalCost>
+            <extraProductImg>../images/ExtraProductMyLove.png</extraProductImg>
+        </extraProduct>
+
+        <review>
+            <title>Love the Story and Actors</title>
+            <reviewDescription>
+                I love the story and the actors, I just don't love how it ended. It is realistic, but for my perspective the boy is valid 
+                for questioning what will happen if he havent met the girl. It's more of his true emotion after what happened to his life, we all have that moments in life, where we start to questioned everything. 
+                The girls emotion is valid tho however it could be much better if she understands the boy who sacrificed a lot for her. Anyway 4/5 for me still one of the heartbreaking movies of all time. Ive watched the korean and chinese version i would say i like the chinese version more.
+            </reviewDescription>
+        </review>
+
+        <productImg>../img/MyLove.jpg</productImg>
+        <productURL>https://www.imdb.com/title/tt14503918/?ref_=fn_al_tt_3</productURL>
+        <releaseYear>2021</releaseYear>
+        <duration timeUnit="minutes">115</duration>
+        <productionCountry>China</productionCountry>
+        <rentalPeriod>1 month</rentalPeriod>
+        
+    </product>
+
+    <product productID="m2">
+
+        <name modeOfDelivery="digital">The Monkey King 3</name>
+        <description>
+            The Monkey King and his traveling companions must find a way to escape from the clutches of a queen who rules an all-female kingdom. They soon land in even deeper trouble when their shenanigans anger the mighty River God.
+        </description>
+        <rentalCost currency="SGD">5</rentalCost>
+        <searchTag>Fantasy</searchTag>
+    
+        <extraProduct>
+            <extraProductName>2 month rental</extraProductName>
+            <additionalCost currency="SGD">3</additionalCost>
+        </extraProduct>
+
+        <productImg>../img/TheMonkeyKing3.jpg</productImg>
+        <productURL>https://www.imdb.com/title/tt6466464/</productURL>
+        <releaseYear>2018</releaseYear>
+        <duration timeUnit="minutes">116</duration>
+        <productionCountry>China</productionCountry>
+        <rentalPeriod>1 month</rentalPeriod>
+        
+    </product>
+
+    <product productID="m3">
+
+        <name modeOfDelivery="digital">Till We Meet Again</name>
+        <description>
+            Xiao Lun, who is struck dead by lightning, has lost memories of his life. While Xiao Lun is working as the god of love, persons with red strings, 
+            with his partner Pinky to reincarnate as a human being, Xiao Lun runs into Xiao Mi, who was his lover during his life and recalls his past. Although Xiao Mi cannot see him anymore, Xiao Lun couldn't stop hovering around her, but at the same time, he also realizes that he has to find someone else to bond her red string to protect her in an uncertain danger. 
+        </description>
+        <rentalCost currency="SGD">5</rentalCost>
+        <searchTag>Afterlife</searchTag>
+        <searchTag>Death</searchTag>
+    
+        <extraProduct>
+            <extraProductName>3 month rental</extraProductName>
+            <additionalCost currency="SGD">3</additionalCost>
+        </extraProduct>
+
+        <review>
+            <title>Goodlook Asia Fantasy Movie, Kai Ko make strong comeback, Gingle Wang pink hair is really so pretty!</title>
+            <reviewDescription>
+                This movie just hit the cinema in my country (You can check your country It's been shown in many different countries on different days.) It's a fun fantasy movie, even though it's 2 hours long, Kai Ko and Vivian Sung performances are really explosive, It's great One of the strongest Asian actors but Gingle Wang is too little on screen!! but this one is really worth watching. The Ost is very nice, highly recommended!
+                Story : Aaron (played by Kai Ko), who was killed by lightning, came to the underworld, and all his memories before his death returned to zero. He has to make a choice reincarnated but may turn into a snail or take up a priesthood, accumulate Yin virtues and reincarnate as a human being? Aaron decides to become a newcomer to the old moon. He partnered with Pinky (Gingle Wang), a hot pink girl, and came to the world 
+                to perform a mission, When Aaron met the dog Alu and led his owner Xiaomi, he was in a previous life. The memories of XiaoMi (played by Vivian Sung) are all back and Aaron hopes to help Xiaomi in the world to find a new marriage, but every red thread tied to Xiaomi hands has been burned! It turns out that some things will not change in 10,000 years.
+                At the same time, Guitoucheng (played by Umin Boya), who escaped from the underworld to the world, launched a bloody revenge operation and found the horse thief brother who betrayed and killed him five hundred years ago, While Aaron was still excited about Xiao Mi inability to tie the red string, Guitoucheng regarded XiaoMi as the next target to destroy.
+            </reviewDescription>
+        </review>
+
+        <review>
+            <title>Made me tears up</title>
+            <reviewDescription>
+                I watched this movie in cinema and I cried badly there. It's a heartwarming story with fantasy elements. But there are some of unanswered questions, mainly about the culture. It's a 123 mins movie, so there weren't (or I missed?) a detailed information about some cultures. The poster is also a little misleading in my opinion, I barely see the pink girl in the second part. 
+                I don't know much about the cast, I only knew Vivian before I watch, but the man's cry is really good, not overly dramatic, but enough to show the longing.
+                But overall it's good. Will watch again when available in global platforms.
+            </reviewDescription>
+        </review>
+
+        <productImg>../img/TillWeMeetAgain.jpg</productImg>
+        <productURL>https://www.imdb.com/title/tt15456878/?ref_=fn_al_tt_0</productURL>
+        <releaseYear>2021</releaseYear>
+        <duration timeUnit="minutes">128</duration>
+        <productionCountry>Tai Wan</productionCountry>
+        <rentalPeriod>2 months</rentalPeriod>
+        
+    </product>
+</products>

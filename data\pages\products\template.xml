@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+   File Name : template.xml
+   Author Name : Chau Sin Han
+   File Created on : 24 October 2022 
+-->
+
+<!DOCTYPE products [
+    <!ELEMENT products (product+)>
+
+    <!ELEMENT product (name,description,rentalCost,searchTag*,parentalRating?,productCondition?,extraProduct+,review*,productImg+,productURL,releaseYear,episode?,duration,productionCountry,rentalPeriod)>
+    <!ATTLIST product productID ID #REQUIRED>
+    <!ENTITY new "The product is new, sealed in it's factory packaging.">
+    <!ENTITY poor "The product is useable. However, the item may be more dented, scratched, rusted or dirty than our normal 'Used' condition level.">
+
+    <!ELEMENT name (#PCDATA)>
+    <!ATTLIST name modeOfDelivery (physical|digital) #REQUIRED>
+
+    <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT rentalCost (#PCDATA)>
+    <!ATTLIST rentalCost currency CDATA #REQUIRED>
+
+    <!ELEMENT searchTag (#PCDATA)>
+    <!ELEMENT parentalRating (#PCDATA)>
+    <!ELEMENT productCondition (#PCDATA)>
+
+    <!ELEMENT extraProduct (extraProductName,additionalCost,extraProductImg?)>
+    <!ELEMENT extraProductName (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ATTLIST additionalCost currency CDATA #REQUIRED>
+    <!ELEMENT extraProductImg (#PCDATA)>
+
+    <!ELEMENT review (title,reviewDescription)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT reviewDescription (#PCDATA)>
+
+    <!ELEMENT productImg (#PCDATA)>
+    <!ELEMENT productURL (#PCDATA)>
+    <!ELEMENT releaseYear (#PCDATA)>
+    <!ELEMENT episode (#PCDATA)>
+
+    <!ELEMENT duration (#PCDATA)>
+    <!ATTLIST duration timeUnit (minutes|hours) #REQUIRED>
+
+    <!ELEMENT productionCountry (#PCDATA)>
+    <!ELEMENT rentalPeriod (#PCDATA)>
+]>
+
+<products>
+    <product productID="p1">
+
+        <name modeOfDelivery="physical"></name>
+        <description></description>
+        <rentalCost currency="SGD"></rentalCost>
+        <searchTag></searchTag>
+        <parentalRating></parentalRating>
+        <productCondition></productCondition>
+
+        <extraProduct>
+            <extraProductName></extraProductName>
+            <additionalCost currency="SGD"></additionalCost>
+            <extraProductImg></extraProductImg>
+        </extraProduct>
+
+        <review>
+            <title></title>
+            <reviewDescription></reviewDescription>
+        </review>
+
+        <productImg></productImg>
+        <productURL></productURL>
+        <releaseYear></releaseYear>
+        <episode></episode>
+        <duration timeUnit="minutes"></duration>
+        <productionCountry></productionCountry>
+        <rentalPeriod></rentalPeriod>
+        
+    </product>
+</products>

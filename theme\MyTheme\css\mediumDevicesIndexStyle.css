@@ -1,0 +1,36 @@
+#welcome-image-1{
+    width: 170px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+
+  #welcome-image-2{
+    width: 170px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+  }
+
+  .container img{
+    width: 170px;
+    height: 250px;
+  }
+
+  .text-box{
+    margin-top: 30px;
+    margin-left: 0vw;
+  }

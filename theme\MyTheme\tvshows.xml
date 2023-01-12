@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+   File Name : tvshows.xml
+   Author Name : Chau Sin Han
+   File Created on : 24 October 2022 
+-->
+
+<!DOCTYPE products [
+    <!ELEMENT products (product+)>
+
+    <!ELEMENT product (name,description,rentalCost,searchTag*,parentalRating?,productCondition?,extraProduct+,review*,productImg+,productURL,releaseYear,episode?,duration,productionCountry,rentalPeriod)>
+    <!ATTLIST product productID ID #REQUIRED>
+    <!ENTITY new "The product is new, sealed in it's factory packaging.">
+    <!ENTITY poor "The product is useable. However, the item may be more dented, scratched, rusted or dirty than our normal 'Used' condition level.">
+
+    <!ELEMENT name (#PCDATA)>
+    <!ATTLIST name modeOfDelivery (physical|digital) #REQUIRED>
+
+    <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT rentalCost (#PCDATA)>
+    <!ATTLIST rentalCost currency CDATA #REQUIRED>
+
+    <!ELEMENT searchTag (#PCDATA)>
+    <!ELEMENT parentalRating (#PCDATA)>
+    <!ELEMENT productCondition (#PCDATA)>
+
+    <!ELEMENT extraProduct (extraProductName,additionalCost,extraProductImg?)>
+    <!ELEMENT extraProductName (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ATTLIST additionalCost currency CDATA #REQUIRED>
+    <!ELEMENT extraProductImg (#PCDATA)>
+
+    <!ELEMENT review (title,reviewDescription)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT reviewDescription (#PCDATA)>
+
+    <!ELEMENT productImg (#PCDATA)>
+    <!ELEMENT productURL (#PCDATA)>
+    <!ELEMENT releaseYear (#PCDATA)>
+    <!ELEMENT episode (#PCDATA)>
+
+    <!ELEMENT duration (#PCDATA)>
+    <!ATTLIST duration timeUnit (minutes|hours) #REQUIRED>
+
+    <!ELEMENT productionCountry (#PCDATA)>
+    <!ELEMENT rentalPeriod (#PCDATA)>
+]>
+
+<products>
+    <product productID="t1">
+
+        <name modeOfDelivery="physical">Love Between Fairy and Devil</name>
+
+        <description>
+            According to legend, in order to obtain terrible power, Dongfang Qing Cang of the Moon Tribe became an
+            emotionless monster. He killed his father, seized the position of Moon Supreme and led an army of 100,000 Moon 
+            Tribe soldiers on a path of devastation. Shuiyuntian (the immortal fairy realm), Cangyan Sea (the Moon Tribe), and
+            Yunmeng Lake (the mortal world) were in grave danger. To save the world and stop Dongfang Qing Cang 
+            and his army, the first God of War of Shuiyuntian destroyed her primordial spirit. Dongfang Qing Cang’s army and primordial 
+            spirit were sealed and his body was locked away in Haotian Tower under the immortal bonds of the Haotian Matrix. However, 
+            if his primordial spirit was restored and Dongfang Qing Cang were to break free from his tower, the world would be in danger 
+            once more. Legend says that only the Goddess of Xishan can prevent this catastrophe, but she vanished without a trace. 
+        </description>
+
+        <rentalCost currency="SGD">10</rentalCost>
+
+        <searchTag>Xianxia</searchTag>
+        <searchTag>Immortal</searchTag>
+        <searchTag>Romantic</searchTag>
+
+        <parentalRating>PG13</parentalRating>
+        <productCondition>&new;</productCondition>
+
+        <extraProduct>
+            <extraProductName>Dong Fang Qing Cang Doll</extraProductName>
+            <additionalCost currency="SGD">20</additionalCost>
+            <extraProductImg>../../data/uploads/ExtraProductDongFangQingCang.jpg</extraProductImg>
+        </extraProduct>
+
+        <extraProduct>
+            <extraProductName>Xiao Lan Hua</extraProductName>
+            <additionalCost currency="SGD">20</additionalCost>
+            <extraProductImg>../../data/uploads/ExtraProductXiaoLanHua.jpg</extraProductImg>
+        </extraProduct>
+
+        <review>
+            <title>Beautiful Forbidden Love</title>
+            <reviewDescription>
+                Love Between Fairy and Devil is a xianxia drama, which narrates the story of forbidden love between a devil and a fairy. The drama has everything a xianxia drama has: forbidden love, reincarnation, a cold male lead falling in love with the warm and bubbly female lead making it his only weakness, female lead with hidden identity and more. But what makes this drama stands out from other xianxia drama is that it has a VERY BEAUTIFUL visual sequence, graphics, and cinematography. Love Between Fairy and Devil successfully brought the 仙（fairy） element into their drama, and I think the drama has raised the standard high for the next xianxia drama. 
+                The narrative of Love Between Fairy and Devil is straightforward, about a fairy unaccidentally saving the demon lord and they gradually fell in love. The screenwriter managed to write a very cohesive and compelling story, also with a coherent storyline making it easy for the audience to understand. The drama also manages to seamlessly combine comedy, romance, also angst in the latter part. Every character in the drama also has their own background story with their own personal motive, each character is there not only for the sake of getting the male and female lead together nor just to make the drama plot more lively, but each character is there making their own decision which gradually leads and builds up to the whole drama plot. 
+                What makes Love Between Fairy and Devil distinctive from other xianxia is definitely its art department and how well they articulate it. The drama manages to articulate the vision of the fantasy world and everything that comes with it. It is beautifully and enchantingly portrayed that you would actually believe the presence of such world, where there are pink skies with whales, a pavilion full of flowers, a castle on top of a hill, and more. It has been a while since there is such beautiful and mesmerizing graphics in a drama. You can see that the drama spends most of its budget on its art department, starting from costumes, CGI, graphics, more (IQIYI also offers the drama in 4k quality!).
+            </reviewDescription>
+        </review>
+
+        <productImg>../../data/uploads/LoveBetweenFairyAndDevil.webp</productImg>
+        <productURL></productURL>
+        <releaseYear>2022</releaseYear>
+        <episode>36</episode>
+        <duration timeUnit="minutes">40 per episode</duration>
+        <productionCountry>China</productionCountry>
+        <rentalPeriod>2 months</rentalPeriod>
+        
+    </product>
+
+    <product productID="t2">
+
+        <name modeOfDelivery="physical">Shining For One Thing</name>
+
+        <description>
+            Lin Bei Xing is a young woman, who is about to enter her 30s, suddenly finds that her life has gone awry when her fiancé, Zhan Yu, whom she has been in love with since high school, cancels their engagement to date her best friend. 
+            Hoping to rekindle memories of their love, Lin Bei Xing invites Zhan Yu to return to their high-school premise in their old school uniforms for a day. While waiting for Zhan Yu in the rain, she activates her old phone and unknowingly travels back in time. 
+            Lin Bei Xing returns to the age of eighteen. The third year of high school is a nightmare, but Lin Bei Xing decides to retake the college entrance examination and forget Zhan Yu. However, an accidental encounter with Zhang Wan Sen after the college entrance examination becomes the trigger of Lin Bei Xing's time and space journey.
+        </description>
+
+        <rentalCost currency="SGD">12</rentalCost>
+
+        <searchTag>Time Travel</searchTag>
+        <searchTag>Suspense</searchTag>
+        <searchTag>High School</searchTag>
+
+        <parentalRating>PG13</parentalRating>
+        <productCondition>&new;</productCondition>
+
+        <extraProduct>
+            <extraProductName>Shining For One Thing Keychains</extraProductName>
+            <additionalCost currency="SGD">5</additionalCost>
+            <extraProductImg>../../data/uploads/ExtraProductShiningForOneThing.webp</extraProductImg>
+        </extraProduct>
+
+        <review>
+            <title>A Heartbreaking &amp; Incredible "I like you"</title>
+            <reviewDescription>
+                I was pulled into the story the moment I watched the trailers for this drama and it sure did not disappoint. It is a great time-traveling romance and suspense story that is brilliantly told. 
+                I went in thinking I knew what would happen but the story turned out quite different than I expected so don't go into the story with any judgment. The actors did an amazing job at bringing their characters to 
+                life and the soundtracks helped complete the story. They cast great actors for Wan Sen and Bei Xing because they were able to make the story touching but not pushy. There are definitely many drama cliches in this 
+                drama but they were used in a way that breaks your heart and makes you feel for the characters, Zhang Wan Sen and Lin Bei Xing. The romance between Wan Sen and Bei Xing is also written so beautifully tragic, which 
+                makes you can't help but keep watching them because you want a romance like that. You won't be able to stop yourself from hurting for Wan Sen and Bei Xing. Also, the script was written consistently despite the time-traveling 
+                element so there were no plot holes. The details of the main storyline did not change and you start to notice the smaller details. I totally fell in love with Wan Sen after watching this drama and now I feel empty and sad. 
+                There are certainly angsty moments in this drama and I cried a lot, but it is all worth it. The love story is an emotional journey that was worth watching how it unfolded. I would say enjoy the first half because the second half 
+                will break your heart. It hurts that a Wan Sen doesn't exist in real life. T_T But just enjoy the drama when you're watching because you'll be so sad when it's over. An "I like you" never hurt this bad. ALSO this drama is NOT DUBBED 
+                so all of the actors are using their real voices which is such a great thing because I hate it when a drama has a dubber who does not match the actor. So, I TOTALLY RECOMMEND this drama if you like time traveling and a cute romance! 
+                Once you fall into this drama, you won't be able to get out.
+            </reviewDescription>
+        </review>
+
+        <review>
+            <title>A purest kind of love story that is full of fluff and make you sob uncontrollably</title>
+            <reviewDescription>
+                This is my all time favourite modern Cdramas. I never thought it is possible to replace Nobuta wo Produce as the best school drama in my heart but this drama did it. This is one of the most beautiful and poignant love stories I have the
+                honour of watching. It made you cry a river and made you question is that possible to love someone so selflessly like that without asking anything in return. It is a purest form of love and this drama portray it beautifully with many surprising 
+                twist and revelations.The most beautiful thing about this drama is their portrayal of love -- it is poignant, deep, pure and profound. I never thought I will get this kind of love story while watching a school drama but this drama did it excellently. 
+                Here we got a female lead who has been in love with someone else for so long. She got a chance to redo her life by 'time travel' to the past and she discovered that there is another boy who has been loving her for so so long and the boy has been protecting 
+                her in silent for all those years without her knowing.The drama started off with the female lead is crazily in love with someone else but when she finally snapped and learn the truth about her fiancee, she never look back. She finally decided to
+                live for herself and redo everything back. She get close to the male lead after figuring out that he is the cause of her time travelling and while getting close to him for selfish reasons, she never thought he ended up taught her many things in life;
+                taught her how fun life could be, taught her to dream and also taught her to find herself and in the process, she ended up falling deeply in love with him. She finally understand that in order for people to love her, she needs to love herself first and things 
+                like the unknown, fears and uncertainly can only be overcome by oneself to finally become a better person.
+            </reviewDescription>
+        </review>
+
+        <productImg>../../data/uploads/ShiningForOneThing.webp</productImg>
+        <productImg>../../data/uploads/ShiningForOneThing1.webp</productImg>
+        <productURL>https://www.imdb.com/title/tt17506818/?ref_=fn_al_tt_1</productURL>
+        <releaseYear>2022</releaseYear>
+        <episode>24</episode>
+        <duration timeUnit="minutes">40 per episode</duration>
+        <productionCountry>China</productionCountry>
+        <rentalPeriod>1 month</rentalPeriod>
+        
+    </product>
+
+    <product productID="t3">
+
+        <name modeOfDelivery="physical">The Journey of Flower</name>
+
+        <description>
+            It tells the story of Hua Qian Gu. On the day of her birth, flowers wilted and the skies turned dark as her mother passed during child birth. Her father passed away when she turned 16 years old. Before he died, 
+            he advised her to learn some skills in order to help her survive as it appears that she has the strange ability to lure demons and other worldly creatures through her scent. 
+            She heeds her father's advice and heads to Mount Shu, where it is said there are people who are experts in dealing with demons and other creatures. However, upon reaching Mount Shu, her journey is stalled when she witnesses
+            the death of the leader of the sect. Thus Qian Gu heads to the Chiang Lu sect to seek help. There she meets Bai Zi Hua, the most gentle yet cold-hearted man, who becomes her teacher, mentor and lover. She also meets other romantic 
+            interests: Dong Fang Yu Qing, who cares for Qian Gu's safety, and Sha Qian Mo, who is the leader of the demon realm. 
+        </description>
+
+        <rentalCost currency="SGD">7</rentalCost>
+
+        <searchTag>Time Travel</searchTag>
+        <searchTag>Suspense</searchTag>
+        <searchTag>High School</searchTag>
+        <parentalRating>PG13</parentalRating>
+        <productCondition>&poor;</productCondition>
+
+        <extraProduct>
+            <extraProductName>Hua Qian Gu Ball Bell</extraProductName>
+            <additionalCost currency="SGD">5</additionalCost>
+            <extraProductImg>../../data/uploads/ExtraProductTheJourneyOfFlowerBallBell.webp</extraProductImg>
+        </extraProduct>
+
+        <review>
+            <title>Favourite Drama of 2015</title>
+            <reviewDescription>
+                This is my favorite drama of 2015. I have not cried for a movie/drama to this extent for quite some time, but this show made me cry nonstop during the last 2 episodes.I love the actors and plot, though there were some moments towards episodes 40-50 when I felt some of the story was missing or skipped; 
+                maybe I can find an uncut version of this to watch again. The actors were so wonderful I felt their character's pain and cheered for almost everyone (even the baddies). There was not a moment when I did not sympathize with both main characters. The fantasy theme was well utilized, but CG was not great. I thought China
+                would have caught up with better CG by now, but unfortunately if you are hoping to see a lot of cool effects, not going to happen here. However, the author and director did a great job with the story and character development. 
+                The costumes were beautiful. I also enjoyed the music and setting, which made the most dramatic scenes very emotional and well balanced.
+            </reviewDescription>
+        </review>
+
+        <productImg>../../data/uploads/TheJourneyOfFlower.webp</productImg>
+        <productURL>https://www.imdb.com/title/tt5033322/?ref_=fn_al_tt_1</productURL>
+        <releaseYear>2015</releaseYear>
+        <episode>58</episode>
+        <duration timeUnit="minutes">45 per episode</duration>
+        <productionCountry>China</productionCountry>
+        <rentalPeriod>2 months</rentalPeriod>
+        
+    </product>
+    
+</products>

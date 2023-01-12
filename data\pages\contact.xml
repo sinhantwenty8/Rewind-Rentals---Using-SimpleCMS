@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 25 Nov 2022 21:18:07 +0800</pubDate><title><![CDATA[Contact]]></title><url><![CDATA[contact]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Contact]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[index]]></parent><content><![CDATA[<p>]]<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<link href="../theme/Mytheme/css/contactStyle.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&amp;display=swap" rel="stylesheet" type="text/css" />
+<div class="form-container">
+	<div id="form">
+		<h2>Contact us</h2>
+
+		<form action="https://jkorpela.fi/cgi-bin/echo.cgi " class="form-class" id="form-id" method="post">
+		<div class="form-group"><label class="label" for="name">Name</label>
+
+			<div class="input-group"><input class="form-control" id="name" name="name" required="" type="text" /></div>
+		</div>
+
+		<div class="form-group"><label class="label" for="email">Email address</label>
+
+			<div class="input-group"><input class="form-control" id="email" name="email" required="" type="email" /></div>
+		</div>
+
+		<div class="form-group"><label class="label" for="message-subject">Subject</label>
+
+			<div class="input-group"><input class="form-control" id="message-subject" name="message-subject" required="" type="text" /></div>
+		</div>
+
+		<div class="form-group"><label class="label" for="message">Message</label>
+
+			<div class="input-group"><textarea class="form-control" id="message" maxlength="3000" name="message" required="" rows="6"></textarea></div>
+		</div>
+
+		<div class="form-group"><label class="label" for="message">Urgent</label>
+
+			<div><input id="yes" name="urgent-choice" type="radio" value="yes" /> <label for="yes">Yes</label><br />
+				<input id="no" name="urgent-choice" required="" type="radio" value="no" /> <label for="no">No</label></div>
+		</div>
+
+		<div class="btn-group"><button class="btn" type="reset">Clear Form</button><button class="btn" type="submit">Send Message</button></div>
+		</form>
+
+		<div style="text-align: center;padding-bottom: 90px;">
+			<hr style="margin-top: 40px;" />
+			<h2 style="margin-top: 80px;margin-bottom: 50px;">Contact details</h2>
+
+			<p><strong>Phone Number : </strong>+65 9496 9990</p>
+
+			<p><strong>Mail to : </strong>RewindRentals@gmail.com</p>
+
+			<p><strong>Find us at : </strong>Rewind Rentals,Street 101, New South Wales, Australia</p>
+		</div>
+	</div>
+</div>
+]]></content><private><![CDATA[]]></private><author><![CDATA[sinhantwenty]]></author></item>

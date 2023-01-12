@@ -1,0 +1,47 @@
+/* File Name : aboutStyle.css 
+   Author Name : Chau Sin Han
+   File Created on : 26 October 2022
+*/
+
+img{
+  width: 28%;
+  height: 39vw;
+  margin-left: 40px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+#about-us-container{
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.8);
+    margin: 5vw 2vw;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: max-content;
+  }
+  
+  #about-text{
+    max-width: 50vw;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  #about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    min-height: max-content;
+    padding: 10vw;
+  }
+
+
+  @media screen and (max-width:1200px) {
+    img{
+      width: 28%;
+      height: 39vw;
+      margin-left: 40px;
+      margin-top: 20vw;
+      border-radius: 10px;
+    }
+  }

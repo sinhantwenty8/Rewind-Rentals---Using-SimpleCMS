@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 25 Nov 2022 18:03:31 +0800</pubDate><title><![CDATA[About]]></title><url><![CDATA[about]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[About]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[index]]></parent><content><![CDATA[<p>&gt;<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<link href="../theme/Mytheme/css/smallDevicesStyle.css" media="screen and (max-width: 1000px)" rel="stylesheet" />
+<link href="../theme/Mytheme/css/aboutStyle.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&amp;display=swap" rel="stylesheet" type="text/css" />
+<div id="about-us-container">
+	<div><img alt="About Us Image" src="../../data/uploads/AboutUs1.webp" /></div>
+
+	<div id="about-section">
+		<h1>About Us</h1>
+
+		<p id="about-text" style="width:700px">Rewind Rentals is a video rental franchise that has continually featured a variety of high-quality and affordable products since day one. Our passion for excellence has driven us from the beginning, and continues to drive us into the future. The team at Rewind Rentals knows that every product counts, and strives to make the entire experience as rewarding and fun as possible. We offers a wide range of categories, such as movies, games, speakers, consoles, screens, and more. Check out our store and special offers, and get in touch with questions or requests.</p>
+	</div>
+</div>
+]]></content><private><![CDATA[]]></private><author><![CDATA[sinhantwenty]]></author></item>

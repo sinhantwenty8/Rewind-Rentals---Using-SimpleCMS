@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 25 Nov 2022 18:06:52 +0800</pubDate><title><![CDATA[Products]]></title><url><![CDATA[products]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Products]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[categoryPage.php]]></template><parent><![CDATA[index]]></parent><content><![CDATA[<!--?php
+
+    $current_page = basename($_SERVER['PHP_SELF']); 
+	$get_category = $_GET['category'];
+
+?--><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--?php echo"<title-->
+<p>Category - ".$get_category.""?&gt;</p>
+<link href="#" rel="shortcut icon" />
+<link href="theme/MyTheme/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="theme/MyTheme/css/style.css" rel="stylesheet" type="text/css" />
+<link href="theme/MyTheme/css/smallDevicesStyle.css" media="screen and (max-width: 1000px)" rel="stylesheet" />
+<link href="theme/MyTheme/css/categoryPageStyle.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&amp;display=swap" rel="stylesheet" type="text/css" />
+<header>
+<p style="padding-top:20px;">Rewind Rentals</p>
+
+<nav><a href="http://cms/index">Home</a> <a href="http://cms/about">About</a>
+
+<div class="dropdown">
+	<p class="drop-text product-nav">Products</p>
+
+	<div class="dropdown-content"><a href="http://cms/categoryPage?category=movies">Movies</a> <a href="http://cms/categoryPage?category=tvshows">TvShows</a></div>
+</div>
+<a href="http://cms/data-collection">Add Product</a> <a href="http://cms/contact">Contact</a> <a href="http://cms/privacy">Privacy Policy</a> <a href="http://cms/terms" style="width: 220px;">Terms and Conditions</a></nav>
+</header>
+<!--?php 
+			$file_string = $get_category.".xml";
+            $xml = file_get_contents($file_string);
+            if (trim($xml) == '') {
+                die('No content');
+            }
+            $xml = simplexml_load_string($xml);
+            echo"<h1-->
+
+<p>Category :".$get_category." "; $list = $xml-&gt;children(); for($i = 0; $i &lt; count($list); $i++){ echo"</p>
+
+<div class="container">"; echo "
+	<p>".$xml-&gt;products."</p>
+	"; echo"
+
+	<h3>".$list[$i]-&gt;name ."</h3>
+	"; echo"
+
+	<div class="flex">
+		<div><img src="&quot;.$list[$i]-&gt;productImg.&quot;" /></div>
+		"; echo"
+
+		<div>
+			<h4>Release Year</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;releaseYear."</p>
+			"; if($list[$i]-&gt;episode){ echo"
+
+			<h4>Episode</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;episode."</p>
+			"; } echo"
+
+			<h4>".$list[$i]-&gt;duration."( ".$list[$i]-&gt;duration-&gt;attributes().")</h4>
+			"; echo"
+
+			<h4>Country of Production</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;productionCountry."</p>
+			"; echo"
+
+			<h4 class="capitalize"><strong>".$list[$i]-&gt;description-&gt;getName()."</strong></h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;description."</p>
+			"; echo"
+
+			<h4>Mode of Delivery</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;name-&gt;attributes()."</p>
+			"; echo"
+
+			<h4>Rental Cost</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;rentalCost."</p>
+			"; echo"
+
+			<h4>Rental Period</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;rentalPeriod."</p>
+			"; if($list[$i]-&gt;productCondition){ echo"
+
+			<h4>Product Condition</h4>
+			"; echo"
+
+			<p>".$list[$i]-&gt;productCondition."</p>
+			"; } if($list[$i]-&gt;review){ echo"
+
+			<h4>Search Tag</h4>
+			"; } for($x = 0; $x &lt; count($list[$i]-&gt;searchTag); $x++){ echo"
+
+			<ul>
+				<li>
+					<p>- ".$list[$i]-&gt;searchTag[$x]; echo"</p>
+				</li>
+				<li>"; } if($list[$i]-&gt;review){ echo"
+					<h4>Review</h4>
+
+					<div>"; } for($c = 0; $c &lt; count($list[$i]-&gt;review); $c++){ echo"
+						<ul>
+							<li>
+								<p>".$list[$i]-&gt;review[$c]."</p>
+								"; echo"
+
+								<h5>".$list[$i]-&gt;review[$c]-&gt;title."</h5>
+								"; echo"
+
+								<p>".$list[$i]-&gt;review[$c]-&gt;reviewDescription."</p>
+								"; echo"</li>
+						</ul>
+					</div>
+					"; } if($list[$i]-&gt;parentalRating){ echo"
+
+					<h4>Parental Rating</h4>
+					"; echo"
+
+					<p>".$list[$i]-&gt;parentalRating."</p>
+					"; } echo"
+
+					<h4>Extra Product</h4>
+					"; for($z = 0; $z &lt; count($list[$z]-&gt;extraProduct); $z++){ echo"
+
+					<h5>".$list[$i]-&gt;extraProduct[$z]-&gt;extraProductName."</h5>
+					"; echo"
+
+					<p>".$list[$i]-&gt;extraProduct[$z]-&gt;additionalCost-&gt;attributes().$list[$i]-&gt;extraProduct[$z]-&gt;additionalCost."</p>
+					"; } echo"
+
+					<div class="center">"; echo"<a class="btn" href="&quot;.$list[$i]-&gt;productURL.&quot;">Product Link</a>"; echo"</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<p>"; } ?&gt;</p>
+
+<p id="last-visit-text">&nbsp;</p>
+]]></content><private><![CDATA[]]></private><author><![CDATA[sinhantwenty]]></author></item>

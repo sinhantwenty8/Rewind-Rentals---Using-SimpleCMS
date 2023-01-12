@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 25 Nov 2022 18:09:17 +0800</pubDate><title><![CDATA[Home]]></title><url><![CDATA[index]]></url><meta><![CDATA[rewind rentals, movies, tvshows]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Home]]></menu><menuOrder><![CDATA[1]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="rentals" content="index, movies,tvshows" />
+<meta charset="utf-8">
+<meta name="theme-color" content="#4285f4" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../theme/Mytheme/css/indexStyle.css" rel="stylesheet" type="text/css" />
+<link href="../theme/Mytheme/css/smallDevicesStyle.css" media="screen and (max-width: 1000px)" rel="stylesheet" />
+<link href="../theme/Mytheme/css/mediumDevicesIndexStyle.css" media="screen and (max-width: 1200px)" rel="stylesheet" />
+<link href="../theme/Mytheme/css/smallDevicesIndexStyle.css" media="screen and (max-width: 800px)" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&amp;display=swap" rel="stylesheet" type="text/css" />
+<div id="welcome-section">
+	<h1>Rewind Rentals</h1>
+
+	<div id="welcome-container">
+		<div id="welcome-paragraph">
+			<p><strong>Looking for something entertaining but not planning to use it for the long term?</strong></p>
+
+			<p><em>Rewind Rentals</em> is the place for you to rent them! We are a video rental franchise in <abbr title="Australia">Aus</abbr> that provides a platform not only for us and for customers to list their home entertainment products <strong>for short term rentals</strong> under a wide range of categories, such as <strong>movies, games, speakers, consoles, screens, and more</strong>.</p>
+		</div>
+
+		<div id="welcome-images"><img alt="Tvshow's Image" id="welcome-image-1" src="../../data/uploads/LoveBetweenFairyAndDevil" /> <img alt="Movie's Image" id="welcome-image-2" src="../../data/uploads/MyLove.webp" /></div>
+	</div>
+</div>
+
+<h1>Featured Products</h1>
+
+<div>
+	<ol class="featured-prod--container">
+		<li class="container">
+			<h2>My Love</h2>
+			<img alt="Movie Image" src="../../data/uploads/MyLove" />
+			<div class="text-box">
+				<p>Tells the 15-year love story between Zhou Xiao Qi, a long-time swimming student and You Yong Ci, a transfer student. In high school, <abbr title="Zhou Xiao Qi">Zhou</abbr> fell in love at first sight with <abbr title="You Yong Ci">You</abbr>. A young and ignorant pure love, the boy silently guarded, but the girl left without saying goodbye. Life after that, 15 years of love long-distance race. Your wedding is also my coming-of-age gift.</p>
+			</div>
+		</li>
+		<li class="container">
+			<h2>The Monkey King 3</h2>
+			<img alt="Movie Image" src="../../data/uploads/TheMonkeyKing3" />
+			<div class="text-box">
+				<p>The Monkey King and his traveling companions must find a way to escape from the clutches of a queen who rules an all-female kingdom. They soon land in even deeper trouble when their shenanigans anger the mighty River God.</p>
+			</div>
+		</li>
+		<li class="container" style="margin-bottom: 5vw;">
+			<h2>Shining For One Thing</h2>
+			<img alt="Tvshow Image" src="../../data/uploads/ShiningForOneThing" />
+			<div class="text-box">
+				<p>Lin Bei Xing is a young woman, who is about to enter her 30s, suddenly finds that her life has gone awry when her fiancé, Zhan Yu, whom she has been in love with since high school, cancels their engagement to date her best friend. Hoping to rekindle memories of their love, <abbr title="Lin Bei Xing">Lin</abbr> invites <abbr title="Zhan Yu">Zhan</abbr> to return to their high-school premise in their old school uniforms for a day. While waiting for Zhan Yu in the rain, she activates her old phone and unknowingly travels back in time.</p>
+			</div>
+		</li>
+	</ol>
+</div>
+]]></content><private><![CDATA[Y]]></private><author><![CDATA[sinhantwenty]]></author></item>
